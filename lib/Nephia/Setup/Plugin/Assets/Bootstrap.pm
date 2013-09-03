@@ -1,8 +1,8 @@
-package Voson::Setup::Plugin::Assets::Bootstrap;
+package Nephia::Setup::Plugin::Assets::Bootstrap;
 use 5.008005;
 use strict;
 use warnings;
-use parent 'Voson::Setup::Plugin';
+use parent 'Nephia::Setup::Plugin';
 
 our $VERSION = "0.01";
 
@@ -23,15 +23,15 @@ __END__
 
 =head1 NAME
 
-Voson::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap into your webapp
+Nephia::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap into your webapp
 
 =head1 SYNOPSIS
 
-    $ voson-setup YourApp --plugins Assets::Bootstrap
+    $ nephia-setup YourApp --plugins Assets::Bootstrap
 
 =head1 DESCRIPTION
 
-Voson::Setup::Plugin::Assets::Bootstrap is downloader for Voson::Setup that is downloads twitter-bootstrap.
+Nephia::Setup::Plugin::Assets::Bootstrap is downloader for Nephia::Setup that is downloads twitter-bootstrap.
 
 =head1 LICENSE
 
