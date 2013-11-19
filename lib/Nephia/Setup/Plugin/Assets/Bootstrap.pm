@@ -3,8 +3,10 @@ use 5.008005;
 use strict;
 use warnings;
 use parent 'Nephia::Setup::Plugin';
+use Nephia::Setup::Plugin::Assets::Bootstrap::Archive_2_3_2;
 
 our $VERSION = "0.01";
+our $ARCHIVE_FILENAME = 'bootstrap-2.3.2.zip';
 
 sub fix_setup {
     my $self = shift;
@@ -13,7 +15,9 @@ sub fix_setup {
 
 sub _assets_bootstrap {
     my ($setup, $context) = @_;
-    $setup->assets_archive('http://getbootstrap.com/2.3.2/assets/bootstrap.zip', qw/static/);
+    my $data = Nephia::Setup::Plugin::Assets::Bootstrap::Archive_2_3_2->data;
+    $setup->spew($ARCHIVE_FILENAME, $data); 
+    $setup->assets_archive($ARCHIVE_FILENAME, qw/static/);
 }
 
 1;
@@ -23,7 +27,7 @@ __END__
 
 =head1 NAME
 
-Nephia::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap into your webapp
+Nephia::Setup::Plugin::Assets::Bootstrap - Deploy twitter-bootstrap(v.2.3.2) into your webapp
 
 =head1 SYNOPSIS
 
@@ -31,7 +35,7 @@ Nephia::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap
 
 =head1 DESCRIPTION
 
-Nephia::Setup::Plugin::Assets::Bootstrap is downloader for Nephia::Setup that is downloads twitter-bootstrap.
+Nephia::Setup::Plugin::Assets::Bootstrap is setup task for Nephia::Setup that deploys twitter-bootstrap into your application.
 
 =head1 LICENSE
 

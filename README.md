@@ -1,6 +1,6 @@
 # NAME
 
-Nephia::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap into your webapp
+Nephia::Setup::Plugin::Assets::Bootstrap - Deploy twitter-bootstrap(v.2.3.2) into your webapp
 
 # SYNOPSIS
 
@@ -8,7 +8,7 @@ Nephia::Setup::Plugin::Assets::Bootstrap - Download and deploy twitter-bootstrap
 
 # DESCRIPTION
 
-Nephia::Setup::Plugin::Assets::Bootstrap is downloader for Nephia::Setup that is downloads twitter-bootstrap.
+Nephia::Setup::Plugin::Assets::Bootstrap is setup task for Nephia::Setup that deploys twitter-bootstrap into your application.
 
 # LICENSE
 
