@@ -5,7 +5,7 @@ use warnings;
 use parent 'Nephia::Setup::Plugin';
 use Nephia::Setup::Plugin::Assets::Bootstrap::Archive_2_3_2;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 our $ARCHIVE_FILENAME = 'bootstrap-2.3.2.zip';
 
 sub fix_setup {
