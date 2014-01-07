@@ -43,6 +43,7 @@
       },
       "runtime" : {
          "requires" : {
+            "File::ShareDir" : "0",
             "MIME::Base64" : "0",
             "Nephia" : "0.80",
             "perl" : "5.008005"
@@ -50,6 +51,7 @@
       },
       "test" : {
          "requires" : {
+            "Test::File::ShareDir" : "0",
             "Test::More" : "0.98"
          }
       }

@@ -1,0 +1,12 @@
+.travis.yml
+Build.PL
+Changes
+cpanfile
+lib/Nephia/Setup/Plugin/Assets/Bootstrap.pm
+LICENSE
+MANIFEST			This list of files
+META.json
+README.md
+share/bootstrap-2.3.2.zip
+t/00_compile.t
+t/01_setup.t
