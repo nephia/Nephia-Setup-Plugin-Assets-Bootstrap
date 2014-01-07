@@ -3,6 +3,9 @@ use warnings;
 use Test::More;
 use File::Temp 'tempdir';
 use File::Spec;
+use Test::File::ShareDir::Module {
+    'Nephia::Setup::Plugin::Assets::Bootstrap' => File::Spec->catdir('share')
+};
 use Nephia::Setup;
 
 {
