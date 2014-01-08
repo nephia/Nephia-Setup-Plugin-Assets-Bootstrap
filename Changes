@@ -2,6 +2,9 @@ Revision history for Perl extension Nephia-Setup-Plugin-Assets-Bootstrap
 
 {{$NEXT}}
 
+0.04 2014-01-08T05:08:47Z
+    - bug fix: no module_file(), use dist_file()
+
 0.03 2014-01-08T03:22:12Z
     - use File::ShareDir
 
