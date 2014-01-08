@@ -44,7 +44,7 @@
       "runtime" : {
          "requires" : {
             "File::ShareDir" : "0",
-            "Nephia" : "0.80",
+            "Nephia" : "0.87",
             "perl" : "5.008005"
          }
       },
