@@ -2,6 +2,9 @@ Revision history for Perl extension Nephia-Setup-Plugin-Assets-Bootstrap
 
 {{$NEXT}}
 
+0.03 2014-01-08T03:22:12Z
+    - use File::ShareDir
+
 0.02 2013-11-20T09:37:43Z
     - add test
     - enable under offline

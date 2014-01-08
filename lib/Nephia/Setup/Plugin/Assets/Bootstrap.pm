@@ -7,7 +7,7 @@ use File::ShareDir ':ALL';
 use File::Copy;
 use File::Spec;
 
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 our $ARCHIVE_FILENAME = 'bootstrap-2.3.2.zip';
 
 sub fix_setup {

@@ -44,14 +44,13 @@
       "runtime" : {
          "requires" : {
             "File::ShareDir" : "0",
-            "MIME::Base64" : "0",
             "Nephia" : "0.80",
             "perl" : "5.008005"
          }
       },
       "test" : {
          "requires" : {
-            "Test::File::ShareDir" : "0",
+            "Test::File::ShareDir::Module" : "0",
             "Test::More" : "0.98"
          }
       }
@@ -68,5 +67,5 @@
          "web" : "https://github.com/nephia/Nephia-Setup-Plugin-Assets-Bootstrap"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
