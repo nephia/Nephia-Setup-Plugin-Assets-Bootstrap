@@ -17,7 +17,9 @@ sub fix_setup {
 
 sub _assets_bootstrap {
     my ($setup, $context) = @_;
-    my $src = module_file(__PACKAGE__, $ARCHIVE_FILENAME);
+    my $dist = __PACKAGE__; 
+    $dist =~ s/\:\:/\-/g;
+    my $src = dist_file($dist, $ARCHIVE_FILENAME);
     my $dst = File::Spec->catfile($setup->approot, $ARCHIVE_FILENAME);
     copy($src, $dst);
     $setup->assets_archive($ARCHIVE_FILENAME, qw/static/);
